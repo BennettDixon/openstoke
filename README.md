@@ -33,3 +33,7 @@ Statically generated guides & wiki based on file system within Git repo.
 
 - [] Release rough V1
 - [] More goals TODO
+
+
+## License
+Project is licensed under MIT license. See [LICENSE.md](LICENSE.md) for more info.
