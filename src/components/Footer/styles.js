@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-import Twitter from '../Twitter'
 import GitHub from '../GitHub'
 
 export const Footer = styled.footer`
@@ -25,8 +24,6 @@ export const Social = styled.div`
 export const StyledGitHub = styled(GitHub)`
   margin-left: 12px;
 `
-
-export const StyledTwitter = styled(Twitter)``
 
 export const A = styled.a`
   &:hover {

@@ -5,3 +5,5 @@ export const fontSizes = {
   bodyLg: '1.25rem',
   body: '1.1rem'
 }
+
+export const fontFamily = 'Lato, sans-serif'
