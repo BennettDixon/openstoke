@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+import { Type } from 'styles'
 import GitHub from '../GitHub'
 
 export const Footer = styled.footer`
@@ -11,6 +12,7 @@ export const Footer = styled.footer`
 `
 
 export const Copyright = styled.p`
+  font-size: ${Type.fontSizes.bodySm};
   display: flex;
   align-items: center;
 `
