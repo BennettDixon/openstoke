@@ -31,6 +31,28 @@ This project uses `styled-components` to style components by using CSS in JS. [R
 ### Style constants
 Check out the [/styles](./src/styles) folder to see constant styles. Please use these styles and add to them when appropriate. This reduces inconsistency across CSS & styles in the app.
 
+```
+import styled from 'styled-components'
+
+import { Type } from 'styles'
+
+export const MyContainer = styled.div`
+  font-size: ${fontSizes.body};
+`
+```
+
+You can also use the theme which contains the active theme info (dark and light mode not yet supported but allows us to do so easily in the future):
+```
+export const LicenseLink = styled.a`
+  margin-left: 3px;
+  &:hover {
+    path {
+      fill: ${props => props.theme.brand};
+    }
+  }
+`
+```
+
 ## Create your own pages (new navigation pages, not blogs etc.)
 Coming soon!
 
