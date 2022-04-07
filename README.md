@@ -29,7 +29,7 @@ npm run dev
 This project uses `styled-components` to style components by using CSS in JS. [Read more about styled-components here.](https://styled-components.com/)
 
 ### Style constants
-Check out the (/styles)[./src/styles] folder to see constant styles. Please use these styles and add to them when appropriate. This reduces inconsistency across CSS & styles in the app.
+Check out the [/styles](./src/styles) folder to see constant styles. Please use these styles and add to them when appropriate. This reduces inconsistency across CSS & styles in the app.
 
 ## Create your own pages (new navigation pages, not blogs etc.)
 Coming soon!
