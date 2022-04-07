@@ -2,7 +2,10 @@
 
 Welcome to the openstoke project. We are dedicated to creating reliable & easily accesibly information regarding open-source one-wheeled balance vehicle devices.
 
-## Contributing guides
+## Contributing to the wiki
+Coming soon!
+
+## Contributing your own guides
 Coming soon!
 
 ## Getting started
