@@ -42,7 +42,7 @@ export default function HomePage ({ allMdx }) {
           ))}
           </S.PostList>*/}
       </S.Main>
-      <S.StyledFooter />
+      {/*<S.StyledFooter />*/}
     </S.Wrap>
   )
 }
