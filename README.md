@@ -20,6 +20,15 @@ npm install
 npm run dev
 ```
 
+## Styling components
+This project uses `styled-components` to style components by using CSS in JS. [Read more about styled-components here.](https://styled-components.com/)
+
+## Create your own pages (new navigation pages, not blogs etc.)
+Coming soon!
+
+## Create your own components
+Coming soon!
+
 ## Technical details on how the mdx routing works
 - `[slug].js` generates static paths using `getStaticPaths` from all `.mdx` files located in the specified directory (`content/` by default).
 - The `getStaticProps` NextJS method passes the MDX content including front-matter (parsed with gray-matter) to the `<PostPage />` component to be rendered.
