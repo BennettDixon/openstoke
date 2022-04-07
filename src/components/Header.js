@@ -23,7 +23,7 @@ const Logo = styled.span`
 `
 
 const Name = styled.span`
-  font-weight: bold;
+  font-weight: ${Type.fontWeights.bold};
 `
 
 const NavItems = styled.ul`

@@ -7,4 +7,10 @@ export const fontSizes = {
   bodySm: '0.9rem'
 }
 
+// these are just defaults now but it allows future customization
+export const fontWeights = {
+  bold: 'bold',
+  regular: 'regular'
+}
+
 export const fontFamily = 'Lato, sans-serif'
