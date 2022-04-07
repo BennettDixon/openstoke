@@ -30,7 +30,16 @@ export const StyledGitHub = styled(GitHub)`
 export const A = styled.a`
   &:hover {
     path {
-      fill: ${props => props.theme.green10};
+      fill: ${props => props.theme.brand};
+    }
+  }
+`
+
+export const LicenseLink = styled.a`
+  margin-left: 3px;
+  &:hover {
+    path {
+      fill: ${props => props.theme.brand};
     }
   }
 `
