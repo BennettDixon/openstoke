@@ -2,6 +2,7 @@ import Link from 'next/link'
 import siteConfig from 'site.config'
 import styled from 'styled-components'
 
+import { Type } from 'styles'
 import { Width } from 'components'
 
 const Nav = styled.nav`
@@ -18,7 +19,7 @@ const Wordmark = styled.div`
 
 const Logo = styled.span`
   margin-right: 8px;
-  font-size: 20px;
+  font-size: ${Type.fontSizes.h3};
 `
 
 const Name = styled.span`

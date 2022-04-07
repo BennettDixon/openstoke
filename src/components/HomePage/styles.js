@@ -1,5 +1,7 @@
 import styled from 'styled-components'
+
 import { Footer } from 'components'
+import { Type } from 'styles'
 
 export const Wrap = styled.div`
   display: flex;
@@ -26,7 +28,6 @@ export const Main = styled.main`
 `
 
 export const H1 = styled.h1`
-  font-size: 40px;
   margin-bottom: 20px;
 `
 
@@ -46,7 +47,6 @@ export const GitHubButton = styled.a`
 export const H2 = styled.h2`
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-size: 14px;
   margin-top: 100px;
   color: ${props => props.theme.text20};
 `
@@ -57,7 +57,7 @@ export const FeatureList = styled.ul`
 `
 
 export const ListItem = styled.li`
-  font-size: 21px;
+  font-size: ${Type.fontSizes.body};
   margin-bottom: 16px;
   color: ${props => props.theme.text20};
 `

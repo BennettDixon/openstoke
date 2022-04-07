@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { fontSizes } from './Type'
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -17,6 +18,22 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100vw;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  p {
+    font-size: ${fontSizes.body}
+  }
+
+  h1 {
+    font-size: ${fontSizes.h1}
+  }
+
+  h2 {
+    font-size: ${fontSizes.h2}
+  }
+
+  h2 {
+    font-size: ${fontSizes.h3}
   }
 
   div {
