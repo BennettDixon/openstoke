@@ -7,17 +7,14 @@ Coming soon!
 
 ## Getting started
 
-*Node 12.0.0 or greater is required -- 16.13.0 recommended*
-
-*NVM is recommended for node version management*
-node `16.3.0` is recommended as that is what is used for development.
-`nvm use 16.3.0`
-
-*yarn is required*
+- Node 12.0.0 or greater is required -- 16.13.0 recommended
+- NVM is recommended for node version management
+  - node `16.3.0` is recommended as that is what is used for development. (`nvm use 16.3.0`)
 
 To start developing the project run the following:
 ```
-yarn run dev
+npm install
+npm run dev
 ```
 
 ## Technical details on how the mdx routing works
