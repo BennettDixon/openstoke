@@ -1,11 +1,9 @@
 export default {
-  title: 'NextJS MDX Digital Garden Starter',
+  title: 'openstoke',
   description:
-    'An opinionated starting point for authoring interactive content using MDX and NextJS',
-  twitterHandle: '@RyanWarnerCodes',
-  githubUsername: 'RyanWarner',
-  author: 'Your Name',
+    'Dedicated to creating reliable & easily accesibly information regarding open-source one-wheeled balance vehicle devices.',
+  author: 'openstoke (initial author Bennett Dixon)',
   favicon: '/favicon.png',
   ogImage: '/ogImage.png',
-  url: 'https://next-mdx.warner.codes'
+  url: 'https://openstoke.org'
 }
