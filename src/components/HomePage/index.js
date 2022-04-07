@@ -8,9 +8,11 @@ export default function HomePage ({ allMdx }) {
   return (
     <S.Wrap>
       <SEO />
-      <Header />
+      {/*<Header />*/}
       <S.Main>
-        <S.H1>
+        <S.H1>Welcome to openstoke</S.H1>
+        Coming soon
+        {/*<S.H1>
           NextJS + MDX
           <br />
           Digital Garden Starter
@@ -38,7 +40,7 @@ export default function HomePage ({ allMdx }) {
               <PostSnippet {...item} />
             </S.PostListItem>
           ))}
-        </S.PostList>
+          </S.PostList>*/}
       </S.Main>
       <S.StyledFooter />
     </S.Wrap>

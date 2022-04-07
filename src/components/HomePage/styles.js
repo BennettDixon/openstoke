@@ -26,7 +26,7 @@ export const Main = styled.main`
 `
 
 export const H1 = styled.h1`
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 20px;
 `
 
