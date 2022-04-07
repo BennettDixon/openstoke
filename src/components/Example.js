@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const ExampleComponent = styled.div`
-  color: green;
+  color: ${props => props.theme.brand};
 `
 
 const Example = props => (

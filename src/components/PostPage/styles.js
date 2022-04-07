@@ -13,5 +13,5 @@ export const Main = styled.main`
 `
 
 export const H1 = styled.h1`
-  color: green;
+  color: ${props => props.theme.brand};
 `

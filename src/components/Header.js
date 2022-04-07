@@ -36,7 +36,7 @@ export const A = styled.a`
   color: ${props => props.theme.text10};
 
   &:hover {
-    color: ${props => props.theme.green10};
+    color: ${props => props.theme.brand};
   }
 `
 
