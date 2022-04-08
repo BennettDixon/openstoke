@@ -3,15 +3,6 @@ import styled from 'styled-components'
 import { Footer } from 'components'
 import { Type } from 'styles'
 
-export const Wrap = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 30px;
-  min-height: 100vh;
-  box-sizing: border-box;
-`
-
 export const StyledFooter = styled(Footer)`
   margin-top: auto;
   padding-top: 40px;

@@ -4,7 +4,8 @@ export const fontSizes = {
   h3: '1.5rem',
   bodyLg: '1.25rem',
   body: '1.1rem',
-  bodySm: '0.9rem'
+  bodySm: '0.9rem',
+  lineHeight: '0.7rem'
 }
 
 // these are just defaults now but it allows future customization

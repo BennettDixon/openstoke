@@ -17,8 +17,10 @@ const Wordmark = styled.div`
   align-items: center;
 `
 
-const Logo = styled.span`
+const Logo = styled.img`
   margin-right: 8px;
+  height: 20px;
+  width: 20px;
   font-size: ${Type.fontSizes.h3};
 `
 
@@ -51,20 +53,25 @@ const Header = props => (
       <Link href='/' passHref>
         <A>
           <Wordmark>
-            <Logo>🌱</Logo>
+            <Logo src='/logo.svg' />
             <Name>{siteConfig.author}</Name>
           </Wordmark>
         </A>
       </Link>
       <NavItems>
         <NavItem>
-          <Link href='/garden' passHref>
-            <A>Digital Garden</A>
+          <Link href='/about' passHref>
+            <A>About</A>
           </Link>
         </NavItem>
         <NavItem>
-          <Link href='/about' passHref>
-            <A>About</A>
+          <Link href='/guides' passHref>
+            <A>Guide blogs</A>
+          </Link>
+        </NavItem>
+        <NavItem>
+          <Link href='/wiki' passHref>
+            <A>Wiki</A>
           </Link>
         </NavItem>
       </NavItems>

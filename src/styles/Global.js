@@ -21,7 +21,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    font-size: ${fontSizes.body}
+    font-size: ${fontSizes.body};
+    line-height: calc(${fontSizes.body} + ${fontSizes.lineHeight});
+    margin: 0.5rem 0px;
   }
 
   h1 {
