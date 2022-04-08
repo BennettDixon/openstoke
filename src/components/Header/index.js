@@ -18,11 +18,16 @@ const NavMenu = props => {
     setNavOpen(!navOpen)
   }
 
+  const closeNav = e => {
+    e?.preventDefault()
+    setNavOpen(false)
+  }
+
   if (showMobileNavButton) {
     return (
-      <S.MobileNavContainer onClick={toggleNav}>
-        <MobileNavMenu open={navOpen} />
-        <S.DrawerContainer open={navOpen}>
+      <S.MobileNavContainer>
+        <MobileNavMenu open={navOpen} closeNav={closeNav} />
+        <S.DrawerContainer open={navOpen} onClick={toggleNav}>
           <DrawerToggle open={navOpen} />
         </S.DrawerContainer>
       </S.MobileNavContainer>
