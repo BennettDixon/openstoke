@@ -29,7 +29,7 @@ npm run dev
 This project uses `styled-components` to style components by using CSS in JS. [Read more about styled-components here.](https://styled-components.com/)
 
 ### Style constants
-Check out the [/styles](./src/styles) folder to see constant styles. Please use these styles and add to them when appropriate. This reduces inconsistency across CSS & styles in the app.
+Check out the [/styles](./src/styles) folder to see constant styles. Please use these styles and add to them when appropriate. This reduces inconsistency across CSS & styles in the app. Here is an example using the `fontSizes` from the `Type` module of our `styles` module.
 
 ```javascript
 import styled from 'styled-components'
@@ -41,7 +41,7 @@ export const MyContainer = styled.div`
 `
 ```
 
-You can also use the theme which contains the active theme info (dark and light mode not yet supported but allows us to do so easily in the future):
+You can also use the `theme` prop which contains the active theme info (dark and light mode not yet supported but allows us to do so easily in the future):
 ```javascript
 export const LicenseLink = styled.a`
   margin-left: 3px;
