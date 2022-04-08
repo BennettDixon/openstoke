@@ -59,7 +59,7 @@ const Header = props => (
     <NavItems>
       <NavItem>
         <Link href='/about' passHref>
-          <A>About Us</A>
+          <A>About</A>
         </Link>
       </NavItem>
       <NavItem>

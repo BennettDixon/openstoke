@@ -1,13 +1,10 @@
-import { SEO, Header } from 'components'
+import { FAQPage } from 'components'
 import { containers } from 'ui-kit'
 
-const FAQ = () => {
+const FAQ = props => {
   return (
     <containers.PrimaryWrap>
-      <SEO />
-      <Header />
-      <h1>FAQ</h1>
-      <p>TODO</p>
+      <FAQPage />
     </containers.PrimaryWrap>
   )
 }

@@ -1,4 +1,4 @@
-import { SEO, Header } from 'components'
+import { Footer, Header, SEO } from 'components'
 import { containers } from 'ui-kit'
 import * as S from './styles'
 
@@ -32,7 +32,7 @@ export default function HomePage ({ allMdx }) {
             </S.PostListItem>
           ))}
           </S.PostList>*/}
-      <S.StyledFooter />
+      <Footer />
     </containers.PrimaryWrap>
   )
 }

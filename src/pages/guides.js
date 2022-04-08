@@ -1,13 +1,10 @@
-import { SEO, Header } from 'components'
+import { GuidesPage } from 'components'
 import { containers } from 'ui-kit'
 
 const Guides = () => {
   return (
     <containers.PrimaryWrap>
-      <SEO />
-      <Header />
-      <h1>Guides</h1>
-      <p>TODO</p>
+      <GuidesPage />
     </containers.PrimaryWrap>
   )
 }
