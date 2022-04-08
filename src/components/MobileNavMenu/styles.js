@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Sizes, ZIndex } from 'styles'
+import { Sizes, Type, ZIndex } from 'styles'
 
 export const MobileNavMenu = styled.nav`
   z-index: ${ZIndex.zHigh};
@@ -24,10 +24,10 @@ export const NavMenuItems = styled.ul`
 export const NavItem = styled.li`
   text-align: left;
   margin: 20px 0px;
+  font-size: ${Type.fontSizes.bodyLg};
 `
 
 export const A = styled.a`
-  text-decoration: none;
   color: ${props => props.theme.text10};
 
   &:hover {
