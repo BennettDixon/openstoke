@@ -1,4 +1,5 @@
 // components
+export DrawerToggle from './DrawerToggle'
 export Example from './Example'
 export Footer from './Footer'
 export GitHub from './GitHub'

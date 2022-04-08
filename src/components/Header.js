@@ -1,8 +1,9 @@
+import { useState } from 'react'
 import Link from 'next/link'
 import siteConfig from 'site.config'
 import styled from 'styled-components'
 
-import { MobileNavMenu } from 'components'
+import { DrawerToggle, MobileNavMenu } from 'components'
 import { funcs } from 'ui-kit'
 import { Type } from 'styles'
 import { ViewPort } from 'models'
@@ -65,12 +66,23 @@ export const MobileNavContainer = styled.button`
 `
 
 const NavMenu = props => {
+  const [navOpen, setNavOpen] = useState(false)
   const viewPort = funcs.getViewPort()
   console.log('got view port....', viewPort)
-  const showMobileNav = viewPort === ViewPort.mobile
-  if (showMobileNav) {
+  const showMobileNavButton = viewPort === ViewPort.mobile
+
+  const toggleNav = e => {
+    e?.preventDefault()
+    setNavOpen(!navOpen)
+  }
+
+  if (showMobileNavButton) {
     console.log('showing mobile nav...')
-    return <MobileNavContainer>Open Mobile Nav</MobileNavContainer>
+    return (
+      <MobileNavContainer onClick={toggleNav}>
+        <DrawerToggle open={navOpen} />
+      </MobileNavContainer>
+    )
   }
   return (
     <NavItems>
