@@ -6,6 +6,7 @@ import * as S from './styles'
 import { DrawerToggle, MobileNavMenu } from 'components'
 import { funcs } from 'ui-kit'
 import { ViewPort } from 'models'
+import { navItems } from 'data'
 
 const NavMenu = props => {
   const [navOpen, setNavOpen] = useState(false)
@@ -29,26 +30,13 @@ const NavMenu = props => {
   }
   return (
     <S.NavItems>
-      <S.NavItem>
-        <Link href='/about' passHref>
-          <S.A>About</S.A>
-        </Link>
-      </S.NavItem>
-      <S.NavItem>
-        <Link href='/faq' passHref>
-          <S.A>FAQ</S.A>
-        </Link>
-      </S.NavItem>
-      <S.NavItem>
-        <Link href='/guides' passHref>
-          <S.A>Guides</S.A>
-        </Link>
-      </S.NavItem>
-      <S.NavItem>
-        <Link href='/resources' passHref>
-          <S.A>Links & Resources</S.A>
-        </Link>
-      </S.NavItem>
+      {navItems.map(item => (
+        <S.NavItem>
+          <Link href={item.link} passHref>
+            <S.A>{item.title}</S.A>
+          </Link>
+        </S.NavItem>
+      ))}
     </S.NavItems>
   )
 }
