@@ -3,7 +3,6 @@ import siteConfig from 'site.config'
 import styled from 'styled-components'
 
 import { Type } from 'styles'
-import { Width } from 'components'
 
 const Nav = styled.nav`
   height: 70px;
@@ -48,40 +47,38 @@ export const NavItem = styled.li`
 `
 
 const Header = props => (
-  <Width>
-    <Nav>
-      <Link href='/' passHref>
-        <A>
-          <Wordmark>
-            <Logo src='/logo.svg' />
-            <Name>{siteConfig.author}</Name>
-          </Wordmark>
-        </A>
-      </Link>
-      <NavItems>
-        <NavItem>
-          <Link href='/about' passHref>
-            <A>About</A>
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link href='/faq' passHref>
-            <A>FAQ</A>
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link href='/guides' passHref>
-            <A>Guides</A>
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link href='/resources' passHref>
-            <A>Links & Resources</A>
-          </Link>
-        </NavItem>
-      </NavItems>
-    </Nav>
-  </Width>
+  <Nav>
+    <Link href='/' passHref>
+      <A>
+        <Wordmark>
+          <Logo src='/logo.svg' />
+          <Name>{siteConfig.author}</Name>
+        </Wordmark>
+      </A>
+    </Link>
+    <NavItems>
+      <NavItem>
+        <Link href='/about' passHref>
+          <A>About Us</A>
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link href='/faq' passHref>
+          <A>FAQ</A>
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link href='/guides' passHref>
+          <A>Guides</A>
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link href='/resources' passHref>
+          <A>Links & Resources</A>
+        </Link>
+      </NavItem>
+    </NavItems>
+  </Nav>
 )
 
 export default Header

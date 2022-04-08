@@ -11,13 +11,7 @@ export default function HomePage ({ allMdx }) {
         <S.H1>Welcome to openstoke</S.H1>
         {/* we will remove the below, it is just for now as we develop */}
         <p>This site is in its very early stages -- check back soon!</p>
-        <p>
-          We are dedicated to creating reliable & easily accessible information
-          regarding open-source, one-wheeled, balance-vehicle devices. This
-          project is an ongoing open-source website. If you'd like to contribute
-          to the wiki (coming soon), create a guide (coming soon), or anything
-          else. Please check out our discord section (coming soon).
-        </p>
+
         {/*<S.FeatureList>
           <S.ListItem>
             Create top level routes from .mdx files organized however you want.
