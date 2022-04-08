@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Type } from 'styles'
+import { Type, ZIndex } from 'styles'
 
 export const Nav = styled.nav`
   height: 70px;
@@ -56,6 +56,8 @@ export const MobileNavContainer = styled.button`
 `
 
 export const DrawerContainer = styled.div`
+  position: relative;
+  z-index: ${ZIndex.zMax};
   display: flex;
   justify-content: center;
   align-items: center;
