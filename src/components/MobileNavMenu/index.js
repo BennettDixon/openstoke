@@ -1,5 +1,5 @@
 import * as S from './styles'
 
-export default function MobileNavMenu (props) {
-  return <S.MobileNavMenu>Mobile menu</S.MobileNavMenu>
+export default function MobileNavMenu ({ open }) {
+  return <S.MobileNavMenu open={open}>Mobile menu</S.MobileNavMenu>
 }

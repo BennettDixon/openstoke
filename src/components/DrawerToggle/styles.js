@@ -5,7 +5,7 @@ export const DrawerToggleComponent = styled.button`
   flex-direction: column;
   background: transparent;
   border: none;
-  padding: 10px;
+
   cursor: pointer;
 
   &:focus {
@@ -15,6 +15,7 @@ export const DrawerToggleComponent = styled.button`
   div {
     width: 16px;
     height: 2px;
+    border-radius: 1px;
     background: ${({ fill }) => fill || 'black'};
     border-radius: 10px;
     transition: all 0.3s linear;
