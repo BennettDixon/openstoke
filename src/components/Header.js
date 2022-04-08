@@ -2,6 +2,7 @@ import Link from 'next/link'
 import siteConfig from 'site.config'
 import styled from 'styled-components'
 
+import { MobileNavMenu } from 'components'
 import { funcs } from 'ui-kit'
 import { Type } from 'styles'
 import { ViewPort } from 'models'
@@ -48,10 +49,21 @@ export const NavItem = styled.li`
   list-style-type: none;
 `
 
+export const MobileNavContainer = styled.div`
+  margin-left: auto;
+`
+
 const NavMenu = props => {
   const viewPort = funcs.getViewPort()
   const showMobileNav = viewPort === ViewPort.mobile
-  console.log('show mobile nav...', showMobileNav)
+  if (showMobileNav) {
+    console.log('showing mobile nav...')
+    return (
+      <MobileNavContainer>
+        <MobileNavMenu />
+      </MobileNavContainer>
+    )
+  }
   return (
     <NavItems>
       <NavItem>
