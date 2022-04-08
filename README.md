@@ -1,6 +1,6 @@
 # openstoke website project
 
-Welcome to the openstoke project. We are dedicated to creating reliable & easily accesibly information regarding open-source one-wheeled balance vehicle devices.
+Welcome to the openstoke project. We are dedicated to creating reliable & easily accesibly information regarding open-source, one-wheeled, balance-vehicle devices.
 
 ## Contributing to the wiki
 Coming soon!
