@@ -74,6 +74,11 @@ const Header = props => (
             <A>Guides</A>
           </Link>
         </NavItem>
+        <NavItem>
+          <Link href='/resources' passHref>
+            <A>Links & Resources</A>
+          </Link>
+        </NavItem>
       </NavItems>
     </Nav>
   </Width>
