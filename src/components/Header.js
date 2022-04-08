@@ -65,13 +65,13 @@ const Header = props => (
           </Link>
         </NavItem>
         <NavItem>
-          <Link href='/guides' passHref>
-            <A>Guide blogs</A>
+          <Link href='/faq' passHref>
+            <A>FAQ</A>
           </Link>
         </NavItem>
         <NavItem>
-          <Link href='/wiki' passHref>
-            <A>Wiki</A>
+          <Link href='/guides' passHref>
+            <A>Guides</A>
           </Link>
         </NavItem>
       </NavItems>

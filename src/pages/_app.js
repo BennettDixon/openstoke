@@ -1,8 +1,8 @@
 import App from 'next/app'
 import { ThemeProvider } from 'styled-components'
 
-import { GlobalStyle } from '../styles/Global'
-import Theme from 'styles/Theme'
+import { containers } from 'ui-kit'
+import { GlobalStyle, Theme } from 'styles'
 
 export default class MyApp extends App {
   render () {
@@ -10,7 +10,9 @@ export default class MyApp extends App {
     return (
       <ThemeProvider theme={Theme.light}>
         <GlobalStyle />
-        <Component {...pageProps} />
+        <containers.AppContainer>
+          <Component {...pageProps} />
+        </containers.AppContainer>
       </ThemeProvider>
     )
   }
