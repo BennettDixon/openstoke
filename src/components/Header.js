@@ -51,7 +51,7 @@ const Header = props => (
     <Link href='/' passHref>
       <A>
         <Wordmark>
-          <Logo src='/logo.svg' />
+          <Logo src='/icons/logo.svg' />
           <Name>{siteConfig.author}</Name>
         </Wordmark>
       </A>

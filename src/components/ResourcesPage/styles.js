@@ -1,17 +1,6 @@
 import styled from 'styled-components'
 
-import { Footer } from 'components'
 import { Type } from 'styles'
-
-export const Main = styled.main`
-  max-width: 700px;
-  padding: 0 30px;
-  width: 100%;
-  margin-top: 60px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-`
 
 export const H1 = styled.h1`
   margin-bottom: 20px;
