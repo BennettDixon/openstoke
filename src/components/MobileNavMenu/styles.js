@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { ZIndex } from 'styles'
+import { Sizes, ZIndex } from 'styles'
 
 export const MobileNavMenu = styled.div`
   z-index: ${ZIndex.zHigh};
@@ -9,5 +9,7 @@ export const MobileNavMenu = styled.div`
   left: ${props => (props.open ? '0' : '-100%')};
   width: 100vw;
   height: 100vh;
-  background: ${props => props.theme.brand};
+  background: ${props => props.theme.background};
+  padding: 80px ${Sizes.appXPadding};
+  box-sizing: border-box;
 `

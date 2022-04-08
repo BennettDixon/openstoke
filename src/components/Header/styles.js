@@ -64,3 +64,8 @@ export const DrawerContainer = styled.div`
   width: 40px;
   height: 40px;
 `
+
+export const NavLogoLinkContainer = styled.div`
+  position: relative;
+  z-index: ${ZIndex.zHigh + 1};
+`

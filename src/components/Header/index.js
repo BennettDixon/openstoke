@@ -55,14 +55,16 @@ const NavMenu = props => {
 
 const Header = props => (
   <S.Nav>
-    <Link href='/' passHref>
-      <S.A>
-        <S.Wordmark>
-          <S.Logo src='/icons/logo.svg' />
-          <S.Name>{siteConfig.author}</S.Name>
-        </S.Wordmark>
-      </S.A>
-    </Link>
+    <S.NavLogoLinkContainer>
+      <Link href='/' passHref>
+        <S.A>
+          <S.Wordmark>
+            <S.Logo src='/icons/logo.svg' />
+            <S.Name>{siteConfig.author}</S.Name>
+          </S.Wordmark>
+        </S.A>
+      </Link>
+    </S.NavLogoLinkContainer>
     <NavMenu />
   </S.Nav>
 )
