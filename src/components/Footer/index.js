@@ -6,17 +6,21 @@ const Footer = props => {
   return (
     <S.Footer>
       <S.Copyright>
-        © {new Date().getFullYear()} {siteConfig.copyrightAuthor} - Licensed
-        under{' '}
-        <S.LicenseLink href={`${projectURL}/blob/main/LICENSE.md`}>
-          MIT license
-        </S.LicenseLink>
+        © {new Date().getFullYear()} {siteConfig.copyrightAuthor}
       </S.Copyright>
-      <S.Social>
-        <S.A href={projectURL}>
-          <S.StyledGitHub />
-        </S.A>
-      </S.Social>
+      <S.LicenseContainer>
+        <S.License>
+          Licensed under
+          <S.LicenseLink href={`${projectURL}/blob/main/LICENSE.md`}>
+            MIT license
+          </S.LicenseLink>
+        </S.License>
+        <S.Social>
+          <S.A href={projectURL}>
+            <S.StyledGitHub />
+          </S.A>
+        </S.Social>
+      </S.LicenseContainer>
     </S.Footer>
   )
 }
