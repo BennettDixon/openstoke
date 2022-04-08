@@ -21,6 +21,7 @@ If you're interested in assisting the project from a technical standpoint and ha
 
 To start developing the project run the following:
 ```
+nvm use 16.3.0
 npm install
 npm run dev
 ```
@@ -37,7 +38,7 @@ import styled from 'styled-components'
 import { Type } from 'styles'
 
 export const MyContainer = styled.div`
-  font-size: ${fontSizes.body};
+  font-size: ${Type.fontSizes.body};
 `
 ```
 
