@@ -2,7 +2,9 @@ import Link from 'next/link'
 import siteConfig from 'site.config'
 import styled from 'styled-components'
 
+import { funcs } from 'ui-kit'
 import { Type } from 'styles'
+import { ViewPort } from 'models'
 
 const Nav = styled.nav`
   height: 70px;
@@ -46,16 +48,11 @@ export const NavItem = styled.li`
   list-style-type: none;
 `
 
-const Header = props => (
-  <Nav>
-    <Link href='/' passHref>
-      <A>
-        <Wordmark>
-          <Logo src='/icons/logo.svg' />
-          <Name>{siteConfig.author}</Name>
-        </Wordmark>
-      </A>
-    </Link>
+const NavMenu = props => {
+  const viewPort = funcs.getViewPort()
+  const showMobileNav = viewPort === ViewPort.mobile
+  console.log('show mobile nav...', showMobileNav)
+  return (
     <NavItems>
       <NavItem>
         <Link href='/about' passHref>
@@ -78,6 +75,20 @@ const Header = props => (
         </Link>
       </NavItem>
     </NavItems>
+  )
+}
+
+const Header = props => (
+  <Nav>
+    <Link href='/' passHref>
+      <A>
+        <Wordmark>
+          <Logo src='/icons/logo.svg' />
+          <Name>{siteConfig.author}</Name>
+        </Wordmark>
+      </A>
+    </Link>
+    <NavMenu />
   </Nav>
 )
 

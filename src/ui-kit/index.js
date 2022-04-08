@@ -3,4 +3,5 @@
  */
 
 import * as containers from './containers'
-export { containers }
+import * as funcs from './funcs'
+export { containers, funcs }
