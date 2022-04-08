@@ -10,7 +10,7 @@ const PrimaryWrap = styled.div`
   box-sizing: border-box;
   width: ${Sizes.primaryContainer.desktop};
 
-  @media (max-width: ${Breakpoints.mobile}) {
+  @media (max-width: ${Breakpoints.tablet}) {
     width: ${Sizes.primaryContainer.mobile};
   }
 `

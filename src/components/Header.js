@@ -49,20 +49,28 @@ export const NavItem = styled.li`
   list-style-type: none;
 `
 
-export const MobileNavContainer = styled.div`
+// change to hamburger button
+export const MobileNavContainer = styled.button`
+  border: none;
+  background: none;
+  color: ${props => props.theme.brand};
+  font-size: ${Type.fontSizes.body};
+  font-weight: ${Type.fontWeights.bold};
   margin-left: auto;
+  cursor: pointer;
+  transition: opacity 500ms;
+  :hover {
+    opacity: 0.5;
+  }
 `
 
 const NavMenu = props => {
   const viewPort = funcs.getViewPort()
+  console.log('got view port....', viewPort)
   const showMobileNav = viewPort === ViewPort.mobile
   if (showMobileNav) {
     console.log('showing mobile nav...')
-    return (
-      <MobileNavContainer>
-        <MobileNavMenu />
-      </MobileNavContainer>
-    )
+    return <MobileNavContainer>Open Mobile Nav</MobileNavContainer>
   }
   return (
     <NavItems>
