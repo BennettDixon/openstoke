@@ -11,6 +11,7 @@ export const Footer = styled.footer`
   flex-direction: column;
   width: ${Sizes.primaryContainer.desktop};
   border-top: 1px solid ${props => props.theme.rule};
+  margin-bottom: 5px;
 
   @media (max-width: ${Breakpoints.tablet}) {
     width: calc(${Sizes.primaryContainer.mobile} - (${Sizes.appXPadding} * 2));
@@ -22,7 +23,7 @@ export const Copyright = styled.p`
   display: flex;
   align-items: center;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 10px;
 `
 
 export const LicenseContainer = styled.div`
