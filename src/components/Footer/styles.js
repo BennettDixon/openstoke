@@ -1,13 +1,15 @@
 import styled from 'styled-components'
 
-import { Type } from 'styles'
+import { Sizes, Type } from 'styles'
 import GitHub from '../GitHub'
 
 export const Footer = styled.footer`
+  position: absolute;
+  bottom: 0;
   height: 70px;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: ${Sizes.primaryContainer.desktop};
   border-top: 1px solid ${props => props.theme.rule};
 `
 

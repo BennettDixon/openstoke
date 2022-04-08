@@ -1,13 +1,14 @@
 import styled from 'styled-components'
 
+import { Sizes } from 'styles'
+
 const PrimaryWrap = styled.div`
   display: flex;
   flex-direction: column;
 
-  padding: 0 30px;
   min-height: 100vh;
   box-sizing: border-box;
-  width: 800px;
+  width: ${Sizes.primaryContainer.desktop};
 `
 
 export { PrimaryWrap }

@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 import { fontSizes } from './Type'
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   html {
     margin: 0;
     padding: 0;
@@ -47,3 +47,6 @@ export const GlobalStyle = createGlobalStyle`
     color: ${props => props.theme.text10};
   }
 `
+
+export { GlobalStyle }
+export default GlobalStyle

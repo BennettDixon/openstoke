@@ -7,12 +7,11 @@ export default function HomePage ({ allMdx }) {
     <containers.PrimaryWrap>
       <SEO />
       <Header />
-      <S.Main>
-        <S.H1>Welcome to openstoke</S.H1>
-        {/* we will remove the below, it is just for now as we develop */}
-        <p>This site is in its very early stages -- check back soon!</p>
+      <S.H1>Welcome to openstoke</S.H1>
+      {/* we will remove the below, it is just for now as we develop */}
+      <p>This site is in its very early stages -- check back soon!</p>
 
-        {/*<S.FeatureList>
+      {/*<S.FeatureList>
           <S.ListItem>
             Create top level routes from .mdx files organized however you want.
           </S.ListItem>
@@ -33,7 +32,6 @@ export default function HomePage ({ allMdx }) {
             </S.PostListItem>
           ))}
           </S.PostList>*/}
-      </S.Main>
       <S.StyledFooter />
     </containers.PrimaryWrap>
   )
