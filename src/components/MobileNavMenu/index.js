@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { navItems } from 'data'
 import * as S from './styles'
 import { useRouter } from 'next/dist/client/router'

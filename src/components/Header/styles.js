@@ -44,7 +44,7 @@ export const NavItem = styled.li`
 `
 
 // change to hamburger button
-export const MobileNavContainer = styled.button`
+export const MobileNavContainer = styled.div`
   border: none;
   background: none;
   color: ${props => props.theme.brand};
@@ -59,7 +59,7 @@ export const DrawerContainer = styled.div`
   position: relative;
   z-index: ${ZIndex.zMax};
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 40px;
   height: 40px;
