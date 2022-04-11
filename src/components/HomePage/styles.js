@@ -22,7 +22,7 @@ export const GitHubButton = styled.a`
 export const H2 = styled.h2`
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-top: 100px;
+  margin-top: 50px;
   color: ${props => props.theme.text20};
 `
 

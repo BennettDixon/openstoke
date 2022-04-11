@@ -20,27 +20,18 @@ export default function HomePage ({ allMdx }) {
           learn more.
         </p>
 
-        <S.FeatureList>
-          <S.ListItem>
-            Create top level routes from .mdx files organized however you want.
-          </S.ListItem>
-          <S.ListItem>
-            Statically generated routes using Next’s `getStaticPaths`.
-          </S.ListItem>
-          <S.ListItem>Supports frontmatter (thanks to gray-matter).</S.ListItem>
-        </S.FeatureList>
         <S.GitHubButton href={`https://github.com/${siteConfig.gitHubProject}`}>
           <GitHub />
           <span>View source on GitHub</span>
         </S.GitHubButton>
-        <S.H2>Featured posts</S.H2>
+        {/*<S.H2>Featured posts</S.H2>
         <S.PostList>
           {allMdx.map(item => (
             <S.PostListItem key={item.slug}>
               <PostSnippet {...item} />
             </S.PostListItem>
           ))}
-        </S.PostList>
+          </S.PostList>*/}
         <Footer />
       </containers.MainContent>
     </containers.PrimaryWrap>
