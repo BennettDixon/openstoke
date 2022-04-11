@@ -65,8 +65,14 @@ class GuidesPageUnwrapped extends React.Component {
           ) : (
             <>
               <S.HideOnEntry hasEntered={false}>
-                <S.H2>Guides</S.H2>
-                <S.Text>Under construction</S.Text>
+                <S.H1>Guides</S.H1>
+                <S.Text>
+                  Welcome to the guides section of the site. Here you can find
+                  guides written & verified by our community to assist you with
+                  your projects. Features like tagging + search coming soon!
+                  <br />
+                  <strong>(this page is currently in beta)</strong>
+                </S.Text>
               </S.HideOnEntry>
               <S.Spacer>
                 <Guides guides={allGuides} />
