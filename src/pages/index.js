@@ -1,36 +1,52 @@
-import fs from 'fs'
-import matter from 'gray-matter'
 import glob from 'fast-glob'
 
 import { HomePage } from 'components'
-import contentGlob from 'utils/contentGlob'
+import getMdx from 'utils/getMdx'
+import { getSlugTree } from 'utils'
 
-export default HomePage
+export const globPath = '_content/guides/**/*.mdx'
+import { globPath as guidesGlobPath } from './guides'
+console.log('GalaxyGlobPAth...', guidesGlobPath)
+async function getGalaxyItems () {
+  const guidesFiles = glob.sync(guidesGlobPath)
 
-export async function getStaticProps () {
-  const files = glob.sync(contentGlob)
+  const allMdx = guidesFiles.map(file => getMdx(file))
 
-  const allMdx = files.map(file => {
-    const split = file.split('/')
-    const filename = split[split.length - 1]
-    const slug = filename.replace('.mdx', '').replace('.md', '')
-
-    const mdxSource = fs.readFileSync(file)
-    const { data } = matter(mdxSource)
-
-    return {
-      slug,
-      frontmatter: data
-    }
+  const { tree } = getSlugTree({
+    files: guidesFiles,
+    startDir: '_content/guides'
   })
 
   const orderedByDate = allMdx.sort((a, b) => {
-    return new Date(b.frontmatter.timestamp) - new Date(a.frontmatter.timestamp)
+    return new Date(b.frontMatter.date) - new Date(a.frontMatter.date)
   })
 
   return {
+    allGalaxyItems: orderedByDate,
+    guidesTree: tree
+  }
+}
+
+export async function getStaticProps () {
+  const files = glob.sync(globPath)
+
+  const allMdx = files.map(file => getMdx(file, 'guides'))
+
+  const { tree } = getSlugTree({ files, startDir: '_content/guides' })
+
+  const orderedByDate = allMdx.sort((a, b) => {
+    return new Date(b.frontMatter.date) - new Date(a.frontMatter.date)
+  })
+
+  const guidesItems = await getGalaxyItems()
+
+  return {
     props: {
-      allMdx: orderedByDate
+      allLogs: orderedByDate,
+      logsTree: tree,
+      ...guidesItems
     }
   }
 }
+
+export default HomePage
