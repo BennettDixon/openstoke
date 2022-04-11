@@ -20,6 +20,14 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
+  a {
+    color: ${props => props.theme.brand};
+    transition: opacity 300ms;
+    :hover {
+      opacity: 0.5;
+    }
+  }
+
   p {
     font-size: ${fontSizes.body};
     line-height: calc(${fontSizes.body} + ${fontSizes.lineHeight});

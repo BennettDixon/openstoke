@@ -1,4 +1,6 @@
-import { Footer, Header, SEO } from 'components'
+import Link from 'next/dist/client/link'
+import { Footer, GitHub, Header, PostSnippet, SEO } from 'components'
+import siteConfig from 'site.config'
 import { containers } from 'ui-kit'
 import * as S from './styles'
 
@@ -7,11 +9,18 @@ export default function HomePage ({ allMdx }) {
     <containers.PrimaryWrap>
       <SEO />
       <Header />
-      <S.H1>Welcome to openstoke</S.H1>
-      {/* we will remove the below, it is just for now as we develop */}
-      <p>This site is in its very early stages -- check back soon!</p>
+      <containers.MainContent>
+        <S.H1>Welcome to openstoke</S.H1>
+        {/* we will remove the below, it is just for now as we develop */}
+        <p>
+          We are dedicated to creating open-source, reliable, and concise
+          information regarding one-wheeled balance-vehicle devices. If you'd
+          like to learn more about this project in general, or contribute in
+          some manner check out our <Link href='/about'>about page</Link> to
+          learn more.
+        </p>
 
-      {/*<S.FeatureList>
+        <S.FeatureList>
           <S.ListItem>
             Create top level routes from .mdx files organized however you want.
           </S.ListItem>
@@ -20,7 +29,7 @@ export default function HomePage ({ allMdx }) {
           </S.ListItem>
           <S.ListItem>Supports frontmatter (thanks to gray-matter).</S.ListItem>
         </S.FeatureList>
-        <S.GitHubButton href={githubUrl}>
+        <S.GitHubButton href={`https://github.com/${siteConfig.gitHubProject}`}>
           <GitHub />
           <span>View source on GitHub</span>
         </S.GitHubButton>
@@ -31,8 +40,9 @@ export default function HomePage ({ allMdx }) {
               <PostSnippet {...item} />
             </S.PostListItem>
           ))}
-          </S.PostList>*/}
-      <Footer />
+        </S.PostList>
+        <Footer />
+      </containers.MainContent>
     </containers.PrimaryWrap>
   )
 }

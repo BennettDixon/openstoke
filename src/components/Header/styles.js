@@ -11,6 +11,7 @@ export const Nav = styled.nav`
 export const Wordmark = styled.div`
   display: flex;
   align-items: center;
+  font-size: ${Type.fontSizes.bodyLg};
 `
 
 export const Logo = styled.img`

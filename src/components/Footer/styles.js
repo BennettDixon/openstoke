@@ -4,9 +4,7 @@ import { Breakpoints, Sizes, Type } from 'styles'
 import GitHub from '../GitHub'
 
 export const Footer = styled.footer`
-  position: absolute;
-  bottom: 0;
-
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   width: ${Sizes.primaryContainer.desktop};

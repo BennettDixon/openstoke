@@ -7,9 +7,11 @@ export default function FAQPage ({ allMdx }) {
     <containers.PrimaryWrap>
       <SEO />
       <Header />
-      <S.H1>FAQ</S.H1>
-      <p>This site is in its very early stages -- check back soon!</p>
-      <Footer />
+      <containers.MainContent>
+        <S.H1>FAQ</S.H1>
+        <p>This site is in its very early stages -- check back soon!</p>
+        <Footer />
+      </containers.MainContent>
     </containers.PrimaryWrap>
   )
 }

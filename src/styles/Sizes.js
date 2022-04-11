@@ -1,5 +1,5 @@
 export const primaryContainer = {
-  desktop: '800px',
+  desktop: '700px',
   mobile: '100%'
 }
 

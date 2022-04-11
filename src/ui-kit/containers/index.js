@@ -3,5 +3,6 @@
  */
 
 import AppContainer from './AppContainer'
+import MainContent from './MainContent'
 import PrimaryWrap from './PrimaryWrap'
-export { AppContainer, PrimaryWrap }
+export { AppContainer, MainContent, PrimaryWrap }
