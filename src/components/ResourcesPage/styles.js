@@ -6,19 +6,6 @@ export const H1 = styled.h1`
   margin-bottom: 20px;
 `
 
-export const GitHubButton = styled.a`
-  border-radius: 4px;
-  border: 1px solid black;
-  padding: 10px 12px;
-  color: black;
-  text-decoration: none;
-  margin-top: 30px;
-  display: grid;
-  gap: 14px;
-  grid-template-columns: auto auto;
-  align-self: flex-start;
-`
-
 export const H2 = styled.h2`
   letter-spacing: 0.1em;
   text-transform: uppercase;

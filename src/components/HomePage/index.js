@@ -1,6 +1,6 @@
 import Link from 'next/dist/client/link'
 import { Footer, GitHub, Header, PostSnippet, SEO } from 'components'
-import siteConfig from 'site.config'
+
 import { containers } from 'ui-kit'
 import * as S from './styles'
 
@@ -20,10 +20,10 @@ export default function HomePage ({ allMdx }) {
           learn more.
         </p>
 
-        <S.GitHubButton href={`https://github.com/${siteConfig.gitHubProject}`}>
-          <GitHub />
-          <span>View source on GitHub</span>
-        </S.GitHubButton>
+        <p>
+          <strong>This site is under construction, check back soon!</strong>
+        </p>
+
         {/*<S.H2>Featured posts</S.H2>
         <S.PostList>
           {allMdx.map(item => (
