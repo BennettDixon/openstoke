@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 
 import * as S from './styles'
 
-const Log = props => {
+const Guide = props => {
   const { date, title, description } = props.frontMatter
   const { slug } = props
   const router = useRouter()
@@ -12,12 +12,12 @@ const Log = props => {
   }
 
   return (
-    <S.Log onClick={handleClick}>
+    <S.Guide onClick={handleClick}>
       <S.Date>{date}</S.Date>
       <S.Title>{title}</S.Title>
       <S.Description>{description}</S.Description>
       <S.Readmore>Read more...</S.Readmore>
-    </S.Log>
+    </S.Guide>
   )
 }
-export default Log
+export default Guide

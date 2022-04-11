@@ -19,8 +19,8 @@ export async function getStaticProps () {
 
   return {
     props: {
-      allLogs: orderedByDate,
-      logsTree: tree
+      allGuides: orderedByDate,
+      guidesTree: tree
     }
   }
 }

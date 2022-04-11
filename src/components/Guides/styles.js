@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
-export const LogsContainer = styled.div`
+export const GuidesContainer = styled.div`
   display: flex;
   flex-direction: column;
 `
 
-export const Log = styled.div`
+export const Guide = styled.div`
   display: flex;
   flex-direction: column;
   margin: 10px 0;

@@ -1,7 +1,7 @@
 import React from 'react'
 import { withRouter } from 'next/router'
 import { MDXProvider } from '@mdx-js/react'
-import { Logs, Footer, Header, SEO } from 'components'
+import { Guides, Footer, Header, SEO } from 'components'
 import * as components from 'components'
 import { containers } from 'ui-kit'
 import * as S from './styles'
@@ -29,15 +29,17 @@ class GuidesPageUnwrapped extends React.Component {
   render () {
     /* allMdx is provided by getStaticProps, using our slug path it returns only the notes. */
     const {
-      logsTree,
+      guidesTree,
       treeNode,
-      allLogs,
+      allGuides,
       frontMatter,
       mdxHtml,
       router
     } = this.props
     const { logsEntered, previouslyEntered, hidingMdx } = this.state
     const { slug } = router?.query
+
+    console.log('guides got...', this.props)
 
     // If the page is not yet generated, this will be displayed
     // initially until getStaticProps() finishes running
@@ -67,7 +69,7 @@ class GuidesPageUnwrapped extends React.Component {
                 <S.Text>Under construction</S.Text>
               </S.HideOnEntry>
               <S.Spacer>
-                <Logs logs={allLogs} />
+                <Guides guides={allGuides} />
               </S.Spacer>
             </>
           )}

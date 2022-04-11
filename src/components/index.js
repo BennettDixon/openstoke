@@ -8,7 +8,7 @@ export MobileNavMenu from './MobileNavMenu'
 export Pagination from './Pagination'
 export PostSnippet from './PostSnippet'
 export SEO from './SEO'
-export Logs from './Logs'
+export Guides from './Guides'
 
 // pages
 export AboutPage from './AboutPage'
