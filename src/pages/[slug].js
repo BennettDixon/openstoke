@@ -2,7 +2,7 @@ import * as components from 'components'
 import getSinglePost from 'utils/getSinglePost'
 import getPathsForContent from 'utils/getPathsForContent'
 
-export async function getStaticPaths() {
+export async function getStaticPaths () {
   const paths = getPathsForContent()
 
   return {
@@ -11,7 +11,7 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params: { slug } }) {
+export async function getStaticProps ({ params: { slug } }) {
   const { mdxHtml, frontmatter } = await getSinglePost(slug)
 
   return {

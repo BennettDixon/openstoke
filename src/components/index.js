@@ -5,8 +5,10 @@ export Footer from './Footer'
 export GitHub from './GitHub'
 export Header from './Header'
 export MobileNavMenu from './MobileNavMenu'
+export Pagination from './Pagination'
 export PostSnippet from './PostSnippet'
 export SEO from './SEO'
+export Logs from './Logs'
 
 // pages
 export AboutPage from './AboutPage'

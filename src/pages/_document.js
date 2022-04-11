@@ -15,7 +15,7 @@ import contentGlob from 'utils/contentGlob'
  * This could potentially create performance issues on large
  * sites with lots of bespoke components. Is there a better way?
  */
- export const getAllMdx = async () => {
+export const getAllMdx = async () => {
   const files = glob.sync(contentGlob)
   const mdxDocs = []
 
