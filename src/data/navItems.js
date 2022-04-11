@@ -1,7 +1,7 @@
 export const navItems = [
   { title: 'About', link: '/about' },
-  { title: 'FAQ', link: '/faq' },
   { title: 'Guides', link: '/guides' },
+  { title: 'FAQ', link: '/faq' },
   { title: 'Links & Resources', link: '/resources' }
 ]
 export default navItems

@@ -43,12 +43,12 @@ class GuidesPageUnwrapped extends React.Component {
 
     // If the page is not yet generated, this will be displayed
     // initially until getStaticProps() finishes running
-
+    const showingMDX = frontMatter && mdxHtml
     return (
       <containers.PrimaryWrap>
         <SEO />
 
-        {!(frontMatter && mdxHtml) && <Header />}
+        {!showingMDX && <Header />}
 
         <containers.MainContent>
           {frontMatter && mdxHtml ? (
@@ -74,7 +74,7 @@ class GuidesPageUnwrapped extends React.Component {
             </>
           )}
         </containers.MainContent>
-        <Footer />
+        {!showingMDX && <Footer />}
       </containers.PrimaryWrap>
     )
   }
