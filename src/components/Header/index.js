@@ -36,7 +36,7 @@ const NavMenu = props => {
   return (
     <S.NavItems>
       {navItems.map(item => (
-        <S.NavItem>
+        <S.NavItem key={item.link}>
           <Link href={item.link} passHref>
             <S.A>{item.title}</S.A>
           </Link>

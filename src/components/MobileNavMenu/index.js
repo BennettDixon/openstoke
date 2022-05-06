@@ -13,7 +13,7 @@ export default function MobileNavMenu ({ closeNav, open }) {
     <S.MobileNavMenu open={open}>
       <S.NavMenuItems>
         {navItems.map(item => (
-          <S.NavItem>
+          <S.NavItem key={item.title}>
             <S.A onClick={e => handleClick(e, item)}>{item.title}</S.A>
           </S.NavItem>
         ))}
